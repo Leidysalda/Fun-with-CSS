@@ -223,12 +223,12 @@ template {
     transition: 0.3s ease;
 }
 
-.menu-open:not(:checked)+.menu-open-button:hover {
+.menu-open:not(:checked) + .menu-open-button:hover {
     transition: 0.3s ease;
     transform: scale(1.1);
 }
 
-.menu-open:checked+.menu-open-button {
+.menu-open:checked + .menu-open-button {
     height: 60px;
     width: 60px;
     margin-bottom: 20px;
@@ -241,21 +241,21 @@ template {
     margin: 3px
 }
 
-.menu-open:checked+.menu-open-button .menu-line-1 {
+.menu-open:checked + .menu-open-button .menu-line-1 {
     transform: rotate(45deg);
     height: 2px;
     width: 23px;
     position: absolute;
 }
 
-.menu-open:checked+.menu-open-button .menu-line-2 {
+.menu-open:checked + .menu-open-button .menu-line-2 {
     transform: rotate(-45deg);
     height: 2px;
     width: 23px;
     position: absolute;
 }
 
-.menu-open:checked+.menu-open-button .menu-line-1 {
+.menu-open:checked + .menu-open-button .menu-line-1 {
     display: none;
 }
 
@@ -278,6 +278,6 @@ template {
     color: #c81938;
 }
 
-.menu-open:not(:checked)~.menu-item {
+.menu-open:not(:checked) ~ .menu-item {
     display: none;
 }
